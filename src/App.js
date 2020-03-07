@@ -14,14 +14,11 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    console.log("component mounted!");
     if (!this.state.peaks) {
       let url = "https://peak-happiness-sal.herokuapp.com/";
 
       axios.get(url).then(res => {
         this.setState({ peaks: res.data });
-        console.log(res.data[0]);
-        console.log("state:", this.state.peaks.Name);
       });
     }
   }

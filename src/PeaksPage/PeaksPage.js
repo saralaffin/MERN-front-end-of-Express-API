@@ -33,7 +33,9 @@ class PeaksPage extends Component {
             <span
               className="carousel-control-prev-icon"
               aria-hidden="true"
-              onClick={() => console.log("previous!")}
+              onClick={() =>
+                this.setState({ activePeak: this.state.activePeak - 1 })
+              }
             ></span>
             <span className="sr-only">Previous</span>
           </a>
@@ -46,7 +48,9 @@ class PeaksPage extends Component {
             <span
               className="carousel-control-next-icon"
               aria-hidden="true"
-              onClick={() => console.log("next!")}
+              onClick={() =>
+                this.setState({ activePeak: this.state.activePeak + 1 })
+              }
             ></span>
             <span className="sr-only">Next</span>
           </a>
