@@ -29,12 +29,12 @@ class App extends Component {
     if (this.state.peaks) {
       return (
         <div>
-          <header>
-            <Link to="/peaks">Peaks List</Link>
+          <header className="d-flex justify-content-between align-items-center">
             <Link to="/">Home</Link>
+            <Link to="/peaks">Peaks List</Link>
           </header>
           <main>
-            <article>
+            <article className="d-flex justify-content-center align-items-center">
               <Route
                 path="/peaks"
                 exact
@@ -50,7 +50,7 @@ class App extends Component {
       return (
         <div>
           <header>
-            <Link to="/">Peaks List</Link>
+            <Link to="/">Home</Link>
           </header>
         </div>
       );

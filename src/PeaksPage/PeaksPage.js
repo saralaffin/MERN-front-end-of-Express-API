@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
 import "../App.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import PeakContent from "../PeakContent/PeakContent";
 
 class PeaksPage extends Component {
   render() {
@@ -14,7 +14,7 @@ class PeaksPage extends Component {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <h1>{this.props.peaks[0].Name}</h1>
+              <PeakContent {...this.props.peaks[0]} />
             </div>
           </div>
           <a
