@@ -48,9 +48,13 @@ class PeaksPage extends Component {
             <span
               className="carousel-control-next-icon"
               aria-hidden="true"
-              onClick={() =>
-                this.setState({ activePeak: this.state.activePeak + 1 })
-              }
+              onClick={() => {
+                if (this.state.activePeak === this.props.peaks.length) {
+                  this.setState({ activePeak: this.state.activePeak + 1 });
+                } else {
+                  this.setState({ activePeak: 0 });
+                }
+              }}
             ></span>
             <span className="sr-only">Next</span>
           </a>
