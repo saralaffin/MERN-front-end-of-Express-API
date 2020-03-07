@@ -4,6 +4,13 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PeakContent from "../PeakContent/PeakContent";
 
 class PeaksPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activePeak: 0
+    };
+  }
   render() {
     return (
       <article className="small-slider">
@@ -14,7 +21,7 @@ class PeaksPage extends Component {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <PeakContent {...this.props.peaks[0]} />
+              <PeakContent {...this.props.peaks[this.state.activePeak]} />
             </div>
           </div>
           <a
