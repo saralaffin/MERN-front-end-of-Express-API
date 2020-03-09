@@ -15,14 +15,7 @@ class App extends Component {
   }
   componentDidMount() {
     if (!this.state.peaks) {
-      let url = "";
-      if (process.env.NODE_ENV === "development") {
-        console.log("in dev mode!");
-        url = "http://localhost:8080/";
-      } else {
-        console.log("in prod mode!");
-        url = "https://peak-happiness-sal.herokuapp.com/";
-      }
+      let url = "https://peak-happiness-sal.herokuapp.com/";
 
       axios.get(url).then(res => {
         this.setState({ peaks: res.data });
