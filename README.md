@@ -4,6 +4,8 @@ Project 7 in General Assembly SEI35. MERN: Mongo, Express, React, Nodejs
 
 To see the app, [click here](https://xenodochial-banach-8dcd17.netlify.com/).
 
+To see my back-end, [click here](https://peak-happiness-sal.herokuapp.com/), or checkout the [Github repo](https://github.com/saralaffin/express-CRUD-API)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 It also implements the CSS framework [Bootstrap](https://getbootstrap.com/).
